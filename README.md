@@ -24,6 +24,11 @@ After installation, you can use the tools directly:
 ason --help
 ```
 
-## Development
+## Maintenance
 
-To update formulae in this tap, modify the `.rb` files in the `Formula/` directory and commit the changes.
+This tap is automatically maintained by [GoReleaser](https://goreleaser.com/). When a new release is created in the main repository, GoReleaser automatically:
+- Updates the formula with the new version
+- Calculates and updates SHA256 checksums
+- Commits and pushes the changes to this tap
+
+Manual formula edits will be overwritten on the next release.
