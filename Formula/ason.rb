@@ -5,13 +5,13 @@
 class Ason < Formula
   desc "※ The sacred rattle that transforms templates into living projects"
   homepage "https://github.com/madstone-tech/ason"
-  version "0.1.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/madstone-tech/ason/releases/download/v0.1.0/ason_Darwin_x86_64.tar.gz"
-      sha256 "a902b445f30797ff91abfed9aa268660856f4491b01a881f01ca81bf402e551b"
+      url "https://github.com/madstone-tech/ason/releases/download/v0.2.1/ason_Darwin_x86_64.tar.gz"
+      sha256 "5db30cb82c8e4f97c5b641c5eb3d36fa42397412f8cf2e6c271cd6d94af3a9ae"
 
       def install
         bin.install "ason"
@@ -23,8 +23,8 @@ class Ason < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/madstone-tech/ason/releases/download/v0.1.0/ason_Darwin_arm64.tar.gz"
-      sha256 "3d32b1495f5ade8f8fbbf7693cff8ac9e3463529e9e32acb7b58ab3965c71ff2"
+      url "https://github.com/madstone-tech/ason/releases/download/v0.2.1/ason_Darwin_arm64.tar.gz"
+      sha256 "be50201ae74bac8ffb31f1a3450611e889095437828d098d11fc80cbf9583f46"
 
       def install
         bin.install "ason"
@@ -39,20 +39,8 @@ class Ason < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/madstone-tech/ason/releases/download/v0.1.0/ason_Linux_x86_64.tar.gz"
-      sha256 "c6b4ada545e34077bdc217a3d4d0b1f66797ba2519ecaf8d43e9e8623206b9d2"
-      def install
-        bin.install "ason"
-
-        # Generate and install shell completions
-        bash_completion.install "completions/ason.bash" => "ason" if File.exist?("completions/ason.bash")
-        zsh_completion.install "completions/_ason" if File.exist?("completions/_ason")
-        fish_completion.install "completions/ason.fish" if File.exist?("completions/ason.fish")
-      end
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/madstone-tech/ason/releases/download/v0.1.0/ason_Linux_armv6.tar.gz"
-      sha256 "d3198780e43966cf4b7a0c84f9143a8d7310d6797f9df10cece796cd1a77d597"
+      url "https://github.com/madstone-tech/ason/releases/download/v0.2.1/ason_Linux_x86_64.tar.gz"
+      sha256 "0a889ad87544a3c66407757495e361859c57523d8b88d040337c463885698545"
       def install
         bin.install "ason"
 
@@ -63,8 +51,8 @@ class Ason < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/madstone-tech/ason/releases/download/v0.1.0/ason_Linux_arm64.tar.gz"
-      sha256 "773b5940f0bc89a544fa4b2c4013dc7705c2bc646e2ba14b96c8e4e56d51099e"
+      url "https://github.com/madstone-tech/ason/releases/download/v0.2.1/ason_Linux_arm64.tar.gz"
+      sha256 "c705bcd6b68dc5bf7dd207333681df1f21f29ecfd3346921cdcd927cad51ea6c"
       def install
         bin.install "ason"
 
