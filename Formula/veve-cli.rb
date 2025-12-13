@@ -5,13 +5,13 @@
 class VeveCli < Formula
   desc "Fast, themeable markdown to PDF converter with Pandoc"
   homepage "https://github.com/madstone-tech/veve-cli"
-  version "0.2.1"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.2.1/veve-cli_Darwin_x86_64.tar.gz"
-      sha256 "3b30cb8a2cf8909c4f50880b62e03ec1f65512eeb0e1ab3c32bc36067368939a"
+      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.9.1/veve-cli_Darwin_x86_64.tar.gz"
+      sha256 "073678b3ecfaaf362b8c6b73f8bba33ddc21bfc6af72c688407852fedc5c9226"
 
       def install
         bin.install "veve"
@@ -23,8 +23,8 @@ class VeveCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.2.1/veve-cli_Darwin_arm64.tar.gz"
-      sha256 "490850ffe3f4d8b5c99290bd08681a77924a6c03d3b6bcfe7d39aacd3849f07b"
+      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.9.1/veve-cli_Darwin_arm64.tar.gz"
+      sha256 "123719b1162d5cb40a502126e74fe1c5414bbb579d42efe5041e20bbd7802685"
 
       def install
         bin.install "veve"
@@ -39,8 +39,8 @@ class VeveCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.2.1/veve-cli_Linux_x86_64.tar.gz"
-      sha256 "8e4c079c5f32affc61a8aea54b2a1424189337d81f21dbd01be2051935449cda"
+      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.9.1/veve-cli_Linux_x86_64.tar.gz"
+      sha256 "cbdc71403319afc317c68210e1f5deceb5a3071d8d0a4fea6f043f6d1f71af68"
       def install
         bin.install "veve"
 
@@ -51,8 +51,8 @@ class VeveCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.2.1/veve-cli_Linux_arm64.tar.gz"
-      sha256 "2cc2520e444e2919aee4db564106fb56d8e6b8cebfd3b20346c79fc8afbc9653"
+      url "https://github.com/madstone-tech/veve-cli/releases/download/v0.9.1/veve-cli_Linux_arm64.tar.gz"
+      sha256 "a8b8687834a27bee2a3957f7e614c5530af8be29d75a8a98872b1b066a611b5e"
       def install
         bin.install "veve"
 
