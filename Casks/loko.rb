@@ -3,7 +3,7 @@ cask "loko" do
   name "loko"
   desc "Guardian of architectural wisdom - C4 model documentation with LLM integration"
   homepage "https://github.com/madstone-tech/loko"
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "loko" do
     on_intel do
       url "https://github.com/madstone-tech/loko/releases/download/v#{version}/loko_Darwin_x86_64.tar.gz",
         verified: "github.com/madstone-tech/loko"
-      sha256 "456993d3d962ad6049b47b003f287dd19d1d4ae2d4b6c019f6dcf4e121f6981e"
+      sha256 "40ee89acbca3c066c87a25d995a44a399ca80063ce2682792ed39d7fad5f70ed"
     end
     on_arm do
       url "https://github.com/madstone-tech/loko/releases/download/v#{version}/loko_Darwin_arm64.tar.gz",
         verified: "github.com/madstone-tech/loko"
-      sha256 "51acff800fef9c9e55c76d8d4abf7cc3c4e868b62bf754c6c555490d75eaba90"
+      sha256 "8ad4544b02eb4760a58de3e69e08fee14c4ef4b3a5b0b98e6a3b4e0e849e75c0"
     end
   end
 
@@ -28,12 +28,12 @@ cask "loko" do
     on_intel do
       url "https://github.com/madstone-tech/loko/releases/download/v#{version}/loko_Linux_x86_64.tar.gz",
         verified: "github.com/madstone-tech/loko"
-      sha256 "c6b188bb7b48468c3d8d0f747e36dff9a312954059e90335ad913bd1884c506b"
+      sha256 "bb7195fefc701a7394b4a8020c574574f2d9efaf42511e0048f052e6d9c2cafc"
     end
     on_arm do
       url "https://github.com/madstone-tech/loko/releases/download/v#{version}/loko_Linux_arm64.tar.gz",
         verified: "github.com/madstone-tech/loko"
-      sha256 "01836bdd2b8d31c77c529035e370d0eb194269aca1b7183a264e55047c3986b1"
+      sha256 "159533250d738896daa5e450271dfb55b34834d904e1066ec98f6f5cf903b5eb"
     end
   end
 
