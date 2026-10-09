@@ -32,7 +32,7 @@ cask "loko" do
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/loko"]
     end
   end
-  generate_completions_from_executable "loko", "completion",
+  generate_completions_from_executable "loko",
     shell_parameter_format: :cobra,
     shells: [:bash, :zsh, :fish]
 
