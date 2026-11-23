@@ -4,21 +4,21 @@ cask "mdstn-cipher" do
 
   on_macos do
     on_arm do
-      sha256 "23ae3d0e4ad4b09668c841c93d8018a6bd6c71ecea283ab22d2a6495905cdd74"
+      sha256 "9701e17604144fc9db0db7ba771f260a7ba54561ad9c3d187bb137dd7086113c"
       url "https://github.com/madstone-tech/cipher-core/releases/download/v#{version}/mdstn-cipher_Darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "007e6e7882c448ebd17b5c93ff2bf5dd019c15a2dd44f8a347739a733395c84d"
+      sha256 "6952ed886fc66e3a3e4d14d7d0298b8296da6254ddaf2d39c9321bc7f01f7283"
       url "https://github.com/madstone-tech/cipher-core/releases/download/v#{version}/mdstn-cipher_Darwin_x86_64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "9ecfbb87f6a014ade0e86d9d0b2b19155ae3baec6fd1770d95587db68befac6b"
+      sha256 "06d5b4426ad79cf91df0564bab0cd3b3d2361a485137cbba9e78446a52f63dc5"
       url "https://github.com/madstone-tech/cipher-core/releases/download/v#{version}/mdstn-cipher_Linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "2a8dfbfc8a0076ab125f290983c6513173c5adb43d22952e88b93512b24d338a"
+      sha256 "903a8ebb6828cfdfa8b9392881904a00e8a42cf3771fe58bc15c3f1b23c09d5c"
       url "https://github.com/madstone-tech/cipher-core/releases/download/v#{version}/mdstn-cipher_Linux_x86_64.tar.gz"
     end
   end
